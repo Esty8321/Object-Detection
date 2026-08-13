@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PDC Image Analysis</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand-mark">P</div>
+      <div>
+        <p class="eyebrow">PERSON DETECTION CONSOLE</p>
+        <h1>Image analysis, made clear.</h1>
+        <p class="lede">Upload one image. The system finds each person, marks reliable body regions, and organizes every crop automatically.</p>
+      </div>
+      <span class="status-pill"><i></i> Model ready</span>
+    </header>
+
+    <section class="upload-card" id="dropZone">
+      <input id="imageInput" type="file" accept="image/jpeg,image/png,image/webp,image/bmp,image/tiff" hidden>
+      <div class="upload-copy">
+        <span class="upload-icon">↑</span>
+        <div>
+          <h2>Choose an image to analyze</h2>
+          <p>JPG, PNG, WEBP, BMP or TIFF · maximum 25 MB</p>
+        </div>
+      </div>
+      <div class="upload-actions">
+        <button class="secondary" id="chooseButton" type="button">Choose image</button>
+        <button class="primary" id="analyzeButton" type="button" disabled>Analyze image <span>→</span></button>
+      </div>
+      <div class="file-preview" id="filePreview" hidden>
+        <img id="previewImage" alt="Selected image preview">
+        <div><strong id="fileName"></strong><span id="fileSize"></span></div>
+        <button id="removeButton" type="button" aria-label="Remove selected image">×</button>
+      </div>
+    </section>
+
+    <section class="loading" id="loading" hidden>
+      <div class="spinner"></div>
+      <div><strong>Analyzing the image</strong><span>Detecting people and building reliable region crops…</span></div>
+    </section>
+    <div class="error" id="error" role="alert" hidden></div>
+
+    <section id="results" hidden>
+      <div class="section-heading">
+        <div><p class="eyebrow">ANALYSIS COMPLETE</p><h2>Image results</h2></div>
+        <span class="count" id="peopleCount"></span>
+      </div>
+      <article class="annotated-card">
+        <div class="card-title"><h3>Detected regions</h3><p>Each label starts with the person number.</p></div>
+        <img id="annotatedImage" alt="Image with detected region boxes">
+      </article>
+      <div id="people"></div>
+    </section>
+  </main>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
+
+<!-- Injection By NetFree -->
+<script src="https://netfree.link/injection-script/note-in-site.js" type="text/javascript" async  id="netfree-note-site" jsondata="%7B%22noteSite%22:%22%D7%9B%D7%93%D7%99%20%D7%A9%D7%94%D7%AA%D7%9E%D7%95%D7%A0%D7%95%D7%AA%20%D7%91%D7%90%D7%AA%D7%A8%20%D7%94%D7%96%D7%94%20%D7%99%D7%97%D7%96%D7%A8%D7%95%20%D7%9E%D7%91%D7%93%D7%99%D7%A7%D7%94%2C%20%D7%99%D7%A9%20%D7%9C%D7%94%D7%92%D7%93%D7%99%D7%A8%20%5C%22%D7%90%D7%A4%D7%A9%D7%A8%20%D7%9C%D7%A1%D7%A0%D7%9F%20%D7%AA%D7%95%D7%9B%D7%9F%20%D7%A9%D7%99%D7%93%D7%95%D7%A2%20%D7%9B%D7%90%D7%99%D7%A9%D7%99%20%D7%90%D7%95%20%D7%A4%D7%A8%D7%98%D7%99%5C%22%20%D7%91%D7%94%D7%92%D7%93%D7%A8%D7%95%D7%AA%20%D7%A1%D7%99%D7%A0%D7%95%D7%9F%20%5B%5B%D7%A6%D7%90%D7%98_AI_%D7%91%D7%A0%D7%98%D7%A4%D7%A8%D7%99%7C%D7%94%D7%99%D7%9B%D7%A0%D7%A1%D7%95%20%D7%9C%D7%9B%D7%90%D7%9F%20%D7%9C%D7%94%D7%A1%D7%91%D7%A8%20%D7%9E%D7%A4%D7%95%D7%A8%D7%98%5D%5D%22%2C%22noteSiteEn%22:%22For%20images%20on%20this%20website%20to%20work%20you%20need%20to%20set%20%5C%22Filter%20content%20that%20is%20known%20as%20personal%20or%20private%5C%22%20%5B%5BAI_Chats_in_NetFree%7CClick%20here%20to%20read%20more%5D%5D%22%7D"></script><script src="//netfree.link/injection-script/go-payment.js" type="text/javascript" async ></script>
+<script src="//netfree.link/injection-script/popup-card-init.js" type="text/javascript" async ></script>

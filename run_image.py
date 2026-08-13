@@ -44,6 +44,7 @@ def build_config(args: argparse.Namespace) -> PipelineConfig:
             enable_face_detector_crop=not args.disable_face_detector,
             multi_person_overlap_threshold=args.multi_overlap_threshold,
             save_classifier_crop_debug=args.save_classifier_crops,
+            save_body_region_crops=not args.no_body_region_crops,
         ),
         save_visualization=not args.no_visualization,
         include_debug=args.debug,
@@ -55,7 +56,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--image", required=True, help="Path to input image")
     parser.add_argument("--output-dir", default="outputs", help="Directory for JSON and annotated image")
     parser.add_argument("--detector-backend", choices=["yolo", "opencv_hog", "auto"], default="yolo", help="Detector backend. Use auto/offline HOG only for testing when YOLO weights are unavailable.")
-    parser.add_argument("--yolo-model", default="person_detector_classifier/models/yolo11n-pose.pt", help="YOLO pose model path/name")
+    parser.add_argument("--yolo-model", default="person_detector_classifier/models/yolo11x-pose.pt", help="YOLO pose model path/name")
     parser.add_argument("--pth-model", default="person_detector_classifier/models/mobilenetv4_utkface_age_gender_best.pth")
     parser.add_argument("--onnx-model", default="person_detector_classifier/models/mobilenetv4_utkface_age_gender.onnx")
     parser.add_argument("--backend", choices=["torch", "onnx"], default="torch")
@@ -74,6 +75,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--disable-face-detector", action="store_true", help="Skip OpenCV face detector crop and rely on pose/keypoint crops")
     parser.add_argument("--multi-overlap-threshold", type=float, default=0.12, help="Overlap ratio that marks a selected bbox as crowded")
     parser.add_argument("--save-classifier-crops", action="store_true", help="With --debug, save the actual crops sent to MobileNet")
+    parser.add_argument("--no-body-region-crops", action="store_true", help="Do not save per-person head/body/limb crops")
     parser.add_argument("--strict-unknown", action="store_true", help="Return unknown when classifier confidence is below --cls-conf/--gender-conf. Default returns top-1 with confidence in debug.")
     parser.add_argument("--include-keypoints", action="store_true")
     parser.add_argument("--debug", action="store_true")

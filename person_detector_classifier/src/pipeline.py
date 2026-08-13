@@ -7,6 +7,7 @@ import numpy as np
 
 from person_detector_classifier.config import PipelineConfig
 from person_detector_classifier.src.attributes import extract_attributes
+from person_detector_classifier.src.body_regions import extract_body_regions
 from person_detector_classifier.src.classifier import AttributeClassifier, ClassificationResult
 from person_detector_classifier.src.detector import PersonDetection, build_detector
 from person_detector_classifier.src.preprocessing import build_classifier_crop, crop_bgr, expand_bbox_xyxy
@@ -96,6 +97,16 @@ class PersonDetectorClassifierPipeline:
 
         classification = self._classify_if_valid(crop_result.crop_bgr, detection, attr.quality)
         attributes = self._compose_attributes(classification, attr, crop_result)
+        body_regions = extract_body_regions(
+            image_bgr=image_bgr,
+            person_bbox_xyxy=detection.bbox_xyxy,
+            keypoints=detection.keypoints,
+            all_bboxes_xyxy=all_bboxes,
+            keypoint_threshold=self.config.attributes.keypoint_conf_threshold,
+            min_width=self.config.attributes.body_region_min_width,
+            min_height=self.config.attributes.body_region_min_height,
+        )
+        attributes["body_regions"] = {name: region.to_dict() for name, region in body_regions.items()}
         return make_annotation(
             annotation_id=annotation_id,
             image_id=image_id,
@@ -160,6 +171,8 @@ class PersonDetectorClassifierPipeline:
                 write_image(out_dir / "annotated_images" / f"{image_path.stem}_annotated.jpg", visual)
             if self.config.include_debug and self.config.attributes.save_classifier_crop_debug:
                 self._save_classifier_debug_crops(image_bgr, annotations, out_dir / "classifier_crops", image_path.stem)
+            if self.config.attributes.save_body_region_crops:
+                self._save_body_region_crops(image_bgr, annotations, out_dir / "body_parts" / image_path.stem)
         return payload
 
     def process_folder(
@@ -233,6 +246,8 @@ class PersonDetectorClassifierPipeline:
             write_image(out_dir / "annotated_images" / f"{image_path.stem}_selected_annotated.jpg", visual)
             if self.config.include_debug and self.config.attributes.save_classifier_crop_debug:
                 self._save_classifier_debug_crops(image_bgr, annotations, out_dir / "classifier_crops", f"{image_path.stem}_selected")
+            if self.config.attributes.save_body_region_crops:
+                self._save_body_region_crops(image_bgr, annotations, out_dir / "body_parts" / f"{image_path.stem}_selected")
         return payload
 
     def _classify_if_valid(
@@ -310,3 +325,23 @@ class PersonDetectorClassifierPipeline:
                 continue
             source = str(crop_info.get("mode", "crop")).replace("/", "_")
             write_image(out_dir / f"{image_stem}_person{ann.get('id', 'x')}_{source}.jpg", crop)
+
+    def _save_body_region_crops(
+        self,
+        image_bgr: np.ndarray,
+        annotations: list[dict[str, Any]],
+        output_dir: Path,
+    ) -> None:
+        """Save only available regions; JSON retains reasons for unavailable regions."""
+        for ann in annotations:
+            person_dir = ensure_dir(output_dir / f"person_{int(ann.get('id', 0)):03d}")
+            regions = ann.get("attributes", {}).get("body_regions", {})
+            for name, info in regions.items():
+                if info.get("status") != "available":
+                    continue
+                bbox = info.get("bbox_xyxy")
+                if not bbox or len(bbox) != 4:
+                    continue
+                crop = crop_bgr(image_bgr, tuple(int(v) for v in bbox))
+                if crop is not None and crop.size:
+                    write_image(person_dir / f"{name}.jpg", crop)

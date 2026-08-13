@@ -48,7 +48,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--output-dir", default="outputs/real_world_rectification")
     p.add_argument("--detector-backend", choices=["yolo", "opencv_hog", "auto"], default="opencv_hog")
     p.add_argument("--classifier-backend", choices=["torch", "onnx"], default="onnx")
-    p.add_argument("--yolo-model", default="models/yolo11n-pose.pt")
+    p.add_argument("--yolo-model", default="models/yolo11x-pose.pt")
     p.add_argument("--pth-model", default="person_detector_classifier/models/mobilenetv4_utkface.pth")
     p.add_argument("--onnx-model", default="person_detector_classifier/models/mobilenetv4_utkface.onnx")
     p.add_argument("--device", default=None)

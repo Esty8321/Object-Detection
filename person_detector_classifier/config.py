@@ -21,7 +21,7 @@ class DetectorConfig:
     """
 
     backend: str = "yolo"
-    model_path: str = "yolo11n-pose.pt"
+    model_path: str = "yolo11x-pose.pt"
     image_size: int = 640
     conf_threshold: float = 0.35
     iou_threshold: float = 0.70
@@ -102,6 +102,10 @@ class AttributeConfig:
     multi_person_overlap_threshold: float = 0.12
     multi_person_force_face_crop: bool = True
     save_classifier_crop_debug: bool = False
+    # Per-person body-region export controls.
+    save_body_region_crops: bool = True
+    body_region_min_width: int = 24
+    body_region_min_height: int = 24
 
 
 @dataclass(frozen=True)

@@ -40,6 +40,7 @@ def build_config(args: argparse.Namespace) -> PipelineConfig:
             multi_person_overlap_threshold=args.multi_overlap_threshold,
             save_classifier_crop_debug=args.save_classifier_crops,
             low_quality_still_classify=args.classify_low_quality,
+            save_body_region_crops=not args.no_body_region_crops,
         ),
         include_debug=args.debug,
     )
@@ -51,12 +52,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--output-dir", default="outputs/examiner", help="Output directory for selected JSON/images")
     parser.add_argument("--colab", action="store_true", help="Use the Colab widget examiner")
     parser.add_argument("--detector-backend", choices=["yolo", "opencv_hog", "auto"], default="yolo")
-    parser.add_argument("--yolo-model", default="person_detector_classifier/models/yolo11n-pose.pt", help="YOLO pose model path/name")
+    parser.add_argument("--yolo-model", default="person_detector_classifier/models/yolo11x-pose.pt", help="YOLO pose model path/name")
     parser.add_argument("--pth-model", default="person_detector_classifier/models/mobilenetv4_utkface_age_gender_best.pth")
     parser.add_argument("--onnx-model", default="person_detector_classifier/models/mobilenetv4_utkface_age_gender.onnx")
     parser.add_argument("--backend", choices=["torch", "onnx"], default="torch")
     parser.add_argument("--device", default=None, help="Example: cuda:0 or cpu. Default auto-selects.")
-    parser.add_argument("--imgsz", type=int, default=640)
+    parser.add_argument("--imgsz", type=int, default=1280)
     parser.add_argument("--det-conf", type=float, default=0.35)
     parser.add_argument("--iou", type=float, default=0.70)
     parser.add_argument("--kp-conf", type=float, default=0.35)
@@ -70,6 +71,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--disable-face-detector", action="store_true", help="Skip OpenCV face detector crop and rely on pose/keypoint crops")
     parser.add_argument("--multi-overlap-threshold", type=float, default=0.12, help="Overlap ratio that marks a selected bbox as crowded")
     parser.add_argument("--save-classifier-crops", action="store_true", help="With --debug, save the actual crops sent to MobileNet")
+    parser.add_argument("--no-body-region-crops", action="store_true", help="Do not save per-person body-region crops")
     parser.add_argument("--strict-unknown", action="store_true", help="Return unknown when classifier confidence is below --cls-conf/--gender-conf. Default returns top-1 with confidence in debug.")
     parser.add_argument("--debug", action="store_true")
     parser.add_argument("--no-class-filter", action="store_true", help="Disable classes=[0] during YOLO inference")

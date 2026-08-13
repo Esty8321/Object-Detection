@@ -9,3 +9,8 @@ outputs/
 *.mp4
 *.log
 final_train_log.txt
+logs/
+outputs_debug
+outputs_debug_gender/
+runs/
+**/yolo11x-pose.pt
