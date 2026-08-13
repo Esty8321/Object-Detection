@@ -1,0 +1,87 @@
+{
+  "info": {
+    "name": "PDC_v3 Person Detector and Classifier output",
+    "schema": "coco_like_person_attributes_v3",
+    "version": "v3"
+  },
+  "images": [
+    {
+      "id": "Screenshot 2026-07-19 133443.jpg",
+      "file_name": "Screenshot 2026-07-19 133443.jpg",
+      "width": 1025,
+      "height": 576
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "image_id": "Screenshot 2026-07-19 133443.jpg",
+      "area": 63878.4508,
+      "bbox": [
+        168.05,
+        213.63,
+        200.68,
+        318.31
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "full_body",
+        "age_group": "child",
+        "occlusion": "none",
+        "quality": "high",
+        "occluded": false,
+        "rotation": -1.94,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "medium",
+          "bbox": [
+            246,
+            223,
+            326,
+            305
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.43,
+        "gender_confidence": 0.99
+      }
+    },
+    {
+      "id": 2,
+      "image_id": "Screenshot 2026-07-19 133443.jpg",
+      "area": 58698.0444,
+      "bbox": [
+        326.67,
+        149.05,
+        155.83,
+        376.68
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "full_body",
+        "age_group": "child",
+        "occlusion": "none",
+        "quality": "high",
+        "occluded": false,
+        "rotation": -3.48,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "high",
+          "bbox": [
+            328,
+            158,
+            422,
+            256
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.46,
+        "gender_confidence": 0.71
+      }
+    }
+  ]
+}

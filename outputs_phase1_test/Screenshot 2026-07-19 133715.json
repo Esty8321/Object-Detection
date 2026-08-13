@@ -1,0 +1,52 @@
+{
+  "info": {
+    "name": "PDC_v3 Person Detector and Classifier output",
+    "schema": "coco_like_person_attributes_v3",
+    "version": "v3"
+  },
+  "images": [
+    {
+      "id": "Screenshot 2026-07-19 133715.jpg",
+      "file_name": "Screenshot 2026-07-19 133715.jpg",
+      "width": 348,
+      "height": 574
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "image_id": "Screenshot 2026-07-19 133715.jpg",
+      "area": 6626.4379,
+      "bbox": [
+        101.33,
+        312.13,
+        45.13,
+        146.83
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "female",
+        "visibility": "full_body",
+        "age_group": "young_adult",
+        "occlusion": "none",
+        "quality": "high",
+        "occluded": false,
+        "rotation": -2.51,
+        "classifier_crop": {
+          "mode": "head_from_shoulders",
+          "quality": "medium",
+          "bbox": [
+            92,
+            281,
+            157,
+            355
+          ],
+          "crowded": false,
+          "reason": "ok"
+        },
+        "age_confidence": 0.64,
+        "gender_confidence": 0.96
+      }
+    }
+  ]
+}

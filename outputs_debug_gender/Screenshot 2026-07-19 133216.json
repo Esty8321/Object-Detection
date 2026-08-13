@@ -1,0 +1,161 @@
+{
+  "info": {
+    "name": "PDC_v3 Person Detector and Classifier output",
+    "schema": "coco_like_person_attributes_v3",
+    "version": "v3"
+  },
+  "images": [
+    {
+      "id": "Screenshot 2026-07-19 133216.jpg",
+      "file_name": "Screenshot 2026-07-19 133216.jpg",
+      "width": 867,
+      "height": 581
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "image_id": "Screenshot 2026-07-19 133216.jpg",
+      "area": 189458.88,
+      "bbox": [
+        331.36,
+        3.0,
+        331.5,
+        571.52
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "unknown",
+        "visibility": "partial",
+        "age_group": "unknown",
+        "occlusion": "partial",
+        "quality": "high",
+        "occluded": true,
+        "rotation": 0.0,
+        "classifier_crop": {
+          "mode": "crowded_no_clean_face",
+          "quality": "reject",
+          "bbox": null,
+          "crowded": true,
+          "reason": "crowded_scene_requires_face_or_head"
+        },
+        "age_confidence": 0.0,
+        "gender_confidence": 0.0,
+        "debug": {
+          "age_class_id": null,
+          "age_confidence": 0.0,
+          "age_probabilities": null,
+          "gender_class_id": null,
+          "gender_confidence": 0.0,
+          "gender_probabilities": null,
+          "classifier_backend": "torch",
+          "classifier_layout": "unknown",
+          "classifier_crop_candidates": [
+            {
+              "source": "face_detector",
+              "bbox_xyxy": null,
+              "quality": "reject",
+              "reason": "no_face_detected",
+              "metrics": {
+                "faces": 0
+              }
+            },
+            {
+              "source": "face_keypoints",
+              "bbox_xyxy": null,
+              "quality": "reject",
+              "reason": "too_few_face_keypoints",
+              "metrics": {
+                "points": 0
+              }
+            },
+            {
+              "source": "head_from_shoulders",
+              "bbox_xyxy": null,
+              "quality": "reject",
+              "reason": "no_shoulder_keypoints",
+              "metrics": {}
+            }
+          ],
+          "bbox_confidence": 0.879445,
+          "keypoints_visible": 8,
+          "keypoints_missing_ratio": 0.529412,
+          "touches_image_boundary": false,
+          "blur_laplacian_var": 1528.522764
+        }
+      }
+    },
+    {
+      "id": 2,
+      "image_id": "Screenshot 2026-07-19 133216.jpg",
+      "area": 169909.8684,
+      "bbox": [
+        548.35,
+        3.0,
+        296.62,
+        572.82
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "unknown",
+        "visibility": "partial",
+        "age_group": "unknown",
+        "occlusion": "partial",
+        "quality": "high",
+        "occluded": true,
+        "rotation": 0.0,
+        "classifier_crop": {
+          "mode": "crowded_no_clean_face",
+          "quality": "reject",
+          "bbox": null,
+          "crowded": true,
+          "reason": "crowded_scene_requires_face_or_head"
+        },
+        "age_confidence": 0.0,
+        "gender_confidence": 0.0,
+        "debug": {
+          "age_class_id": null,
+          "age_confidence": 0.0,
+          "age_probabilities": null,
+          "gender_class_id": null,
+          "gender_confidence": 0.0,
+          "gender_probabilities": null,
+          "classifier_backend": "torch",
+          "classifier_layout": "unknown",
+          "classifier_crop_candidates": [
+            {
+              "source": "face_detector",
+              "bbox_xyxy": null,
+              "quality": "reject",
+              "reason": "no_face_detected",
+              "metrics": {
+                "faces": 0
+              }
+            },
+            {
+              "source": "face_keypoints",
+              "bbox_xyxy": null,
+              "quality": "reject",
+              "reason": "too_few_face_keypoints",
+              "metrics": {
+                "points": 0
+              }
+            },
+            {
+              "source": "head_from_shoulders",
+              "bbox_xyxy": null,
+              "quality": "reject",
+              "reason": "no_shoulder_keypoints",
+              "metrics": {}
+            }
+          ],
+          "bbox_confidence": 0.90723,
+          "keypoints_visible": 8,
+          "keypoints_missing_ratio": 0.529412,
+          "touches_image_boundary": false,
+          "blur_laplacian_var": 1743.863641
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+*.pth
+*.onnx
+*.onnx.data
+.DS_Store
+outputs/
+*.mp4
+*.log
+final_train_log.txt

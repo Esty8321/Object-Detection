@@ -1,0 +1,87 @@
+{
+  "info": {
+    "name": "PDC_v3 Person Detector and Classifier output",
+    "schema": "coco_like_person_attributes_v3",
+    "version": "v3"
+  },
+  "images": [
+    {
+      "id": "Screenshot 2026-07-19 133524.jpg",
+      "file_name": "Screenshot 2026-07-19 133524.jpg",
+      "width": 865,
+      "height": 577
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "image_id": "Screenshot 2026-07-19 133524.jpg",
+      "area": 34580.0796,
+      "bbox": [
+        196.65,
+        360.8,
+        161.96,
+        213.51
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "female",
+        "visibility": "upper_body",
+        "age_group": "child",
+        "occlusion": "heavy",
+        "quality": "medium",
+        "occluded": true,
+        "rotation": 0.91,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "high",
+          "bbox": [
+            233,
+            380,
+            330,
+            481
+          ],
+          "crowded": false,
+          "reason": "ok"
+        },
+        "age_confidence": 0.44,
+        "gender_confidence": 0.88
+      }
+    },
+    {
+      "id": 2,
+      "image_id": "Screenshot 2026-07-19 133524.jpg",
+      "area": 36422.6988,
+      "bbox": [
+        342.77,
+        331.83,
+        150.42,
+        242.14
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "female",
+        "visibility": "upper_body",
+        "age_group": "adult",
+        "occlusion": "partial",
+        "quality": "medium",
+        "occluded": true,
+        "rotation": 7.92,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "high",
+          "bbox": [
+            376,
+            347,
+            477,
+            451
+          ],
+          "crowded": false,
+          "reason": "ok"
+        },
+        "age_confidence": 0.57,
+        "gender_confidence": 0.7
+      }
+    }
+  ]
+}

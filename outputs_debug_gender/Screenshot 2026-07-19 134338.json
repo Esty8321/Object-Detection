@@ -1,0 +1,106 @@
+{
+  "info": {
+    "name": "PDC_v3 Person Detector and Classifier output",
+    "schema": "coco_like_person_attributes_v3",
+    "version": "v3"
+  },
+  "images": [
+    {
+      "id": "Screenshot 2026-07-19 134338.jpg",
+      "file_name": "Screenshot 2026-07-19 134338.jpg",
+      "width": 755,
+      "height": 509
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "image_id": "Screenshot 2026-07-19 134338.jpg",
+      "area": 181094.2122,
+      "bbox": [
+        52.68,
+        139.56,
+        599.61,
+        302.02
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "female",
+        "visibility": "full_body",
+        "age_group": "senior",
+        "occlusion": "none",
+        "quality": "high",
+        "occluded": false,
+        "rotation": 0.0,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "high",
+          "bbox": [
+            44,
+            157,
+            205,
+            324
+          ],
+          "crowded": false,
+          "reason": "ok"
+        },
+        "age_confidence": 0.74,
+        "gender_confidence": 0.98,
+        "debug": {
+          "age_class_id": 5,
+          "age_confidence": 0.73512,
+          "age_probabilities": [
+            0.028023,
+            0.041403,
+            0.019076,
+            0.036137,
+            0.140241,
+            0.73512
+          ],
+          "gender_class_id": 1,
+          "gender_confidence": 0.984759,
+          "gender_probabilities": [
+            0.015241,
+            0.984759
+          ],
+          "classifier_backend": "torch",
+          "classifier_layout": "age6_gender2+tta4",
+          "classifier_crop_candidates": [
+            {
+              "source": "face_detector",
+              "bbox_xyxy": null,
+              "quality": "reject",
+              "reason": "no_face_detected",
+              "metrics": {
+                "faces": 0
+              }
+            },
+            {
+              "source": "face_keypoints",
+              "bbox_xyxy": [
+                44,
+                157,
+                205,
+                324
+              ],
+              "quality": "high",
+              "reason": "ok",
+              "metrics": {
+                "width": 161,
+                "height": 167,
+                "blur": 273.134,
+                "brightness": 147.311,
+                "face_keypoints": 3
+              }
+            }
+          ],
+          "bbox_confidence": 0.851818,
+          "keypoints_visible": 15,
+          "keypoints_missing_ratio": 0.117647,
+          "touches_image_boundary": false,
+          "blur_laplacian_var": 233.739493
+        }
+      }
+    }
+  ]
+}

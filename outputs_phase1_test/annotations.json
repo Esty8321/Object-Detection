@@ -1,0 +1,1876 @@
+{
+  "info": {
+    "name": "PDC_v3 Person Detector and Classifier output",
+    "schema": "coco_like_person_attributes_v3",
+    "version": "v3"
+  },
+  "images": [
+    {
+      "id": "Screenshot 2026-07-19 132727.jpg",
+      "file_name": "Screenshot 2026-07-19 132727.jpg",
+      "width": 870,
+      "height": 582
+    },
+    {
+      "id": "Screenshot 2026-07-19 132844.jpg",
+      "file_name": "Screenshot 2026-07-19 132844.jpg",
+      "width": 412,
+      "height": 277
+    },
+    {
+      "id": "Screenshot 2026-07-19 132926.jpg",
+      "file_name": "Screenshot 2026-07-19 132926.jpg",
+      "width": 872,
+      "height": 579
+    },
+    {
+      "id": "Screenshot 2026-07-19 133017.jpg",
+      "file_name": "Screenshot 2026-07-19 133017.jpg",
+      "width": 788,
+      "height": 576
+    },
+    {
+      "id": "Screenshot 2026-07-19 133112.jpg",
+      "file_name": "Screenshot 2026-07-19 133112.jpg",
+      "width": 868,
+      "height": 579
+    },
+    {
+      "id": "Screenshot 2026-07-19 133216.jpg",
+      "file_name": "Screenshot 2026-07-19 133216.jpg",
+      "width": 867,
+      "height": 581
+    },
+    {
+      "id": "Screenshot 2026-07-19 133322.jpg",
+      "file_name": "Screenshot 2026-07-19 133322.jpg",
+      "width": 936,
+      "height": 576
+    },
+    {
+      "id": "Screenshot 2026-07-19 133443.jpg",
+      "file_name": "Screenshot 2026-07-19 133443.jpg",
+      "width": 1025,
+      "height": 576
+    },
+    {
+      "id": "Screenshot 2026-07-19 133524.jpg",
+      "file_name": "Screenshot 2026-07-19 133524.jpg",
+      "width": 865,
+      "height": 577
+    },
+    {
+      "id": "Screenshot 2026-07-19 133618.jpg",
+      "file_name": "Screenshot 2026-07-19 133618.jpg",
+      "width": 869,
+      "height": 582
+    },
+    {
+      "id": "Screenshot 2026-07-19 133715.jpg",
+      "file_name": "Screenshot 2026-07-19 133715.jpg",
+      "width": 348,
+      "height": 574
+    },
+    {
+      "id": "Screenshot 2026-07-19 133927.jpg",
+      "file_name": "Screenshot 2026-07-19 133927.jpg",
+      "width": 868,
+      "height": 582
+    },
+    {
+      "id": "Screenshot 2026-07-19 134052.jpg",
+      "file_name": "Screenshot 2026-07-19 134052.jpg",
+      "width": 661,
+      "height": 445
+    },
+    {
+      "id": "Screenshot 2026-07-19 134215.jpg",
+      "file_name": "Screenshot 2026-07-19 134215.jpg",
+      "width": 479,
+      "height": 449
+    },
+    {
+      "id": "Screenshot 2026-07-19 134338.jpg",
+      "file_name": "Screenshot 2026-07-19 134338.jpg",
+      "width": 755,
+      "height": 509
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "image_id": "Screenshot 2026-07-19 132727.jpg",
+      "area": 37450.7147,
+      "bbox": [
+        73.3,
+        160.85,
+        109.03,
+        343.49
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "full_body",
+        "age_group": "child",
+        "occlusion": "none",
+        "quality": "high",
+        "occluded": false,
+        "rotation": 8.02,
+        "classifier_crop": {
+          "mode": "head_from_shoulders",
+          "quality": "medium",
+          "bbox": [
+            104,
+            146,
+            170,
+            220
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.38,
+        "gender_confidence": 0.8
+      }
+    },
+    {
+      "id": 2,
+      "image_id": "Screenshot 2026-07-19 132727.jpg",
+      "area": 55003.8456,
+      "bbox": [
+        128.68,
+        162.62,
+        161.51,
+        340.56
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "female",
+        "visibility": "full_body",
+        "age_group": "teen",
+        "occlusion": "none",
+        "quality": "high",
+        "occluded": false,
+        "rotation": 0.67,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "medium",
+          "bbox": [
+            149,
+            157,
+            234,
+            246
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.34,
+        "gender_confidence": 0.79
+      }
+    },
+    {
+      "id": 3,
+      "image_id": "Screenshot 2026-07-19 132727.jpg",
+      "area": 28192.6125,
+      "bbox": [
+        225.49,
+        164.17,
+        83.25,
+        338.65
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "female",
+        "visibility": "full_body",
+        "age_group": "young_adult",
+        "occlusion": "none",
+        "quality": "high",
+        "occluded": false,
+        "rotation": 5.76,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "medium",
+          "bbox": [
+            234,
+            153,
+            319,
+            242
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.62,
+        "gender_confidence": 0.7
+      }
+    },
+    {
+      "id": 4,
+      "image_id": "Screenshot 2026-07-19 132727.jpg",
+      "area": 104263.4424,
+      "bbox": [
+        275.2,
+        171.24,
+        281.58,
+        370.28
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "full_body",
+        "age_group": "senior",
+        "occlusion": "none",
+        "quality": "high",
+        "occluded": false,
+        "rotation": -2.46,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "high",
+          "bbox": [
+            391,
+            168,
+            484,
+            264
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.69,
+        "gender_confidence": 0.91
+      }
+    },
+    {
+      "id": 5,
+      "image_id": "Screenshot 2026-07-19 132727.jpg",
+      "area": 40090.3268,
+      "bbox": [
+        281.06,
+        175.83,
+        119.32,
+        335.99
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "female",
+        "visibility": "full_body",
+        "age_group": "young_adult",
+        "occlusion": "none",
+        "quality": "high",
+        "occluded": false,
+        "rotation": 2.55,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "medium",
+          "bbox": [
+            310,
+            167,
+            394,
+            255
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.55,
+        "gender_confidence": 0.73
+      }
+    },
+    {
+      "id": 6,
+      "image_id": "Screenshot 2026-07-19 132727.jpg",
+      "area": 38493.411,
+      "bbox": [
+        484.3,
+        151.55,
+        105.85,
+        363.66
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "female",
+        "visibility": "full_body",
+        "age_group": "middle_age",
+        "occlusion": "none",
+        "quality": "high",
+        "occluded": false,
+        "rotation": -2.04,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "high",
+          "bbox": [
+            471,
+            143,
+            562,
+            238
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.75,
+        "gender_confidence": 0.97
+      }
+    },
+    {
+      "id": 7,
+      "image_id": "Screenshot 2026-07-19 132727.jpg",
+      "area": 36597.595,
+      "bbox": [
+        550.46,
+        176.74,
+        109.1,
+        335.45
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "full_body",
+        "age_group": "middle_age",
+        "occlusion": "none",
+        "quality": "high",
+        "occluded": false,
+        "rotation": -3.49,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "medium",
+          "bbox": [
+            558,
+            172,
+            642,
+            259
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.72,
+        "gender_confidence": 0.98
+      }
+    },
+    {
+      "id": 8,
+      "image_id": "Screenshot 2026-07-19 132727.jpg",
+      "area": 26392.149,
+      "bbox": [
+        637.08,
+        170.28,
+        78.45,
+        336.42
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "female",
+        "visibility": "full_body",
+        "age_group": "young_adult",
+        "occlusion": "partial",
+        "quality": "high",
+        "occluded": true,
+        "rotation": -8.16,
+        "classifier_crop": {
+          "mode": "head_from_shoulders",
+          "quality": "medium",
+          "bbox": [
+            645,
+            165,
+            711,
+            239
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.92,
+        "gender_confidence": 0.71
+      }
+    },
+    {
+      "id": 9,
+      "image_id": "Screenshot 2026-07-19 132727.jpg",
+      "area": 22858.3884,
+      "bbox": [
+        689.41,
+        178.23,
+        70.26,
+        325.34
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "female",
+        "visibility": "full_body",
+        "age_group": "young_adult",
+        "occlusion": "none",
+        "quality": "high",
+        "occluded": false,
+        "rotation": 0.0,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "medium",
+          "bbox": [
+            667,
+            166,
+            748,
+            251
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.94,
+        "gender_confidence": 1.0
+      }
+    },
+    {
+      "id": 10,
+      "image_id": "Screenshot 2026-07-19 132844.jpg",
+      "area": 25332.8488,
+      "bbox": [
+        64.35,
+        89.1,
+        211.76,
+        119.63
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "female",
+        "visibility": "full_body",
+        "age_group": "teen",
+        "occlusion": "partial",
+        "quality": "medium",
+        "occluded": true,
+        "rotation": 0.0,
+        "classifier_crop": {
+          "mode": "head_from_shoulders",
+          "quality": "medium",
+          "bbox": [
+            138,
+            59,
+            204,
+            133
+          ],
+          "crowded": false,
+          "reason": "ok"
+        },
+        "age_confidence": 0.33,
+        "gender_confidence": 0.71
+      }
+    },
+    {
+      "id": 11,
+      "image_id": "Screenshot 2026-07-19 132926.jpg",
+      "area": 104027.1888,
+      "bbox": [
+        81.89,
+        126.1,
+        233.58,
+        445.36
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "female",
+        "visibility": "upper_body",
+        "age_group": "young_adult",
+        "occlusion": "partial",
+        "quality": "high",
+        "occluded": true,
+        "rotation": 18.14,
+        "classifier_crop": {
+          "mode": "head_from_shoulders",
+          "quality": "high",
+          "bbox": [
+            119,
+            130,
+            265,
+            302
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.61,
+        "gender_confidence": 0.99
+      }
+    },
+    {
+      "id": 12,
+      "image_id": "Screenshot 2026-07-19 132926.jpg",
+      "area": 151680.2054,
+      "bbox": [
+        246.83,
+        72.99,
+        304.94,
+        497.41
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "upper_body",
+        "age_group": "teen",
+        "occlusion": "partial",
+        "quality": "high",
+        "occluded": true,
+        "rotation": -5.07,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "high",
+          "bbox": [
+            313,
+            90,
+            446,
+            228
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.25,
+        "gender_confidence": 1.0
+      }
+    },
+    {
+      "id": 13,
+      "image_id": "Screenshot 2026-07-19 132926.jpg",
+      "area": 5302.653,
+      "bbox": [
+        544.4,
+        210.94,
+        45.38,
+        116.85
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "full_body",
+        "age_group": "middle_age",
+        "occlusion": "none",
+        "quality": "low",
+        "occluded": false,
+        "rotation": -5.21,
+        "classifier_crop": {
+          "mode": "head_from_shoulders",
+          "quality": "medium",
+          "bbox": [
+            533,
+            167,
+            599,
+            241
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.54,
+        "gender_confidence": 0.99
+      }
+    },
+    {
+      "id": 14,
+      "image_id": "Screenshot 2026-07-19 132926.jpg",
+      "area": 4689.395,
+      "bbox": [
+        697.4,
+        210.32,
+        38.9,
+        120.55
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "full_body",
+        "age_group": "middle_age",
+        "occlusion": "none",
+        "quality": "low",
+        "occluded": false,
+        "rotation": 0.0,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "medium",
+          "bbox": [
+            696,
+            195,
+            754,
+            256
+          ],
+          "crowded": false,
+          "reason": "ok"
+        },
+        "age_confidence": 0.73,
+        "gender_confidence": 1.0
+      }
+    },
+    {
+      "id": 15,
+      "image_id": "Screenshot 2026-07-19 133017.jpg",
+      "area": 120882.445,
+      "bbox": [
+        195.05,
+        79.89,
+        246.85,
+        489.7
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "upper_body",
+        "age_group": "senior",
+        "occlusion": "partial",
+        "quality": "high",
+        "occluded": true,
+        "rotation": 3.68,
+        "classifier_crop": {
+          "mode": "head_from_shoulders",
+          "quality": "high",
+          "bbox": [
+            223,
+            0,
+            469,
+            275
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.8,
+        "gender_confidence": 0.94
+      }
+    },
+    {
+      "id": 16,
+      "image_id": "Screenshot 2026-07-19 133017.jpg",
+      "area": 211412.0976,
+      "bbox": [
+        203.14,
+        34.39,
+        394.08,
+        536.47
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "female",
+        "visibility": "upper_body",
+        "age_group": "child",
+        "occlusion": "partial",
+        "quality": "high",
+        "occluded": true,
+        "rotation": -2.79,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "high",
+          "bbox": [
+            413,
+            51,
+            545,
+            189
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.36,
+        "gender_confidence": 0.99
+      }
+    },
+    {
+      "id": 17,
+      "image_id": "Screenshot 2026-07-19 133112.jpg",
+      "area": 115169.66,
+      "bbox": [
+        249.19,
+        1.89,
+        269.0,
+        428.14
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "female",
+        "visibility": "full_body",
+        "age_group": "middle_age",
+        "occlusion": "partial",
+        "quality": "high",
+        "occluded": true,
+        "rotation": 9.09,
+        "classifier_crop": {
+          "mode": "upper_body_fallback",
+          "quality": "high",
+          "bbox": [
+            215,
+            0,
+            552,
+            241
+          ],
+          "crowded": false,
+          "reason": "ok"
+        },
+        "age_confidence": 0.83,
+        "gender_confidence": 0.99
+      }
+    },
+    {
+      "id": 18,
+      "image_id": "Screenshot 2026-07-19 133112.jpg",
+      "area": 129070.6018,
+      "bbox": [
+        496.61,
+        0.7,
+        308.14,
+        418.87
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "female",
+        "visibility": "full_body",
+        "age_group": "middle_age",
+        "occlusion": "partial",
+        "quality": "high",
+        "occluded": true,
+        "rotation": 1.14,
+        "classifier_crop": {
+          "mode": "upper_body_fallback",
+          "quality": "high",
+          "bbox": [
+            463,
+            0,
+            838,
+            236
+          ],
+          "crowded": false,
+          "reason": "ok"
+        },
+        "age_confidence": 0.54,
+        "gender_confidence": 1.0
+      }
+    },
+    {
+      "id": 19,
+      "image_id": "Screenshot 2026-07-19 133216.jpg",
+      "area": 189458.88,
+      "bbox": [
+        331.36,
+        3.0,
+        331.5,
+        571.52
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "unknown",
+        "visibility": "partial",
+        "age_group": "unknown",
+        "occlusion": "partial",
+        "quality": "high",
+        "occluded": true,
+        "rotation": 0.0,
+        "classifier_crop": {
+          "mode": "crowded_no_clean_face",
+          "quality": "reject",
+          "bbox": null,
+          "crowded": true,
+          "reason": "crowded_scene_requires_face_or_head"
+        },
+        "age_confidence": 0.0,
+        "gender_confidence": 0.0
+      }
+    },
+    {
+      "id": 20,
+      "image_id": "Screenshot 2026-07-19 133216.jpg",
+      "area": 169909.8684,
+      "bbox": [
+        548.35,
+        3.0,
+        296.62,
+        572.82
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "unknown",
+        "visibility": "partial",
+        "age_group": "unknown",
+        "occlusion": "partial",
+        "quality": "high",
+        "occluded": true,
+        "rotation": 0.0,
+        "classifier_crop": {
+          "mode": "crowded_no_clean_face",
+          "quality": "reject",
+          "bbox": null,
+          "crowded": true,
+          "reason": "crowded_scene_requires_face_or_head"
+        },
+        "age_confidence": 0.0,
+        "gender_confidence": 0.0
+      }
+    },
+    {
+      "id": 21,
+      "image_id": "Screenshot 2026-07-19 133322.jpg",
+      "area": 81112.948,
+      "bbox": [
+        341.58,
+        84.61,
+        205.1,
+        395.48
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "full_body",
+        "age_group": "young_adult",
+        "occlusion": "none",
+        "quality": "high",
+        "occluded": false,
+        "rotation": 0.0,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "high",
+          "bbox": [
+            402,
+            109,
+            501,
+            212
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.73,
+        "gender_confidence": 0.66
+      }
+    },
+    {
+      "id": 22,
+      "image_id": "Screenshot 2026-07-19 133322.jpg",
+      "area": 120439.1783,
+      "bbox": [
+        511.93,
+        60.54,
+        242.23,
+        497.21
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "full_body",
+        "age_group": "adult",
+        "occlusion": "none",
+        "quality": "high",
+        "occluded": false,
+        "rotation": 0.0,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "high",
+          "bbox": [
+            557,
+            80,
+            681,
+            209
+          ],
+          "crowded": false,
+          "reason": "ok"
+        },
+        "age_confidence": 0.32,
+        "gender_confidence": 0.95
+      }
+    },
+    {
+      "id": 23,
+      "image_id": "Screenshot 2026-07-19 133443.jpg",
+      "area": 63878.4508,
+      "bbox": [
+        168.05,
+        213.63,
+        200.68,
+        318.31
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "full_body",
+        "age_group": "child",
+        "occlusion": "none",
+        "quality": "high",
+        "occluded": false,
+        "rotation": -1.94,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "medium",
+          "bbox": [
+            246,
+            223,
+            326,
+            305
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.43,
+        "gender_confidence": 0.99
+      }
+    },
+    {
+      "id": 24,
+      "image_id": "Screenshot 2026-07-19 133443.jpg",
+      "area": 58698.0444,
+      "bbox": [
+        326.67,
+        149.05,
+        155.83,
+        376.68
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "full_body",
+        "age_group": "child",
+        "occlusion": "none",
+        "quality": "high",
+        "occluded": false,
+        "rotation": -3.48,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "high",
+          "bbox": [
+            328,
+            158,
+            422,
+            256
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.46,
+        "gender_confidence": 0.71
+      }
+    },
+    {
+      "id": 25,
+      "image_id": "Screenshot 2026-07-19 133524.jpg",
+      "area": 34580.0796,
+      "bbox": [
+        196.65,
+        360.8,
+        161.96,
+        213.51
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "female",
+        "visibility": "upper_body",
+        "age_group": "child",
+        "occlusion": "heavy",
+        "quality": "medium",
+        "occluded": true,
+        "rotation": 0.91,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "high",
+          "bbox": [
+            233,
+            380,
+            330,
+            481
+          ],
+          "crowded": false,
+          "reason": "ok"
+        },
+        "age_confidence": 0.44,
+        "gender_confidence": 0.88
+      }
+    },
+    {
+      "id": 26,
+      "image_id": "Screenshot 2026-07-19 133524.jpg",
+      "area": 36422.6988,
+      "bbox": [
+        342.77,
+        331.83,
+        150.42,
+        242.14
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "female",
+        "visibility": "upper_body",
+        "age_group": "adult",
+        "occlusion": "partial",
+        "quality": "medium",
+        "occluded": true,
+        "rotation": 7.92,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "high",
+          "bbox": [
+            376,
+            347,
+            477,
+            451
+          ],
+          "crowded": false,
+          "reason": "ok"
+        },
+        "age_confidence": 0.57,
+        "gender_confidence": 0.7
+      }
+    },
+    {
+      "id": 27,
+      "image_id": "Screenshot 2026-07-19 133618.jpg",
+      "area": 49491.1599,
+      "bbox": [
+        0.0,
+        258.04,
+        153.79,
+        321.81
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "upper_body",
+        "age_group": "adult",
+        "occlusion": "partial",
+        "quality": "high",
+        "occluded": true,
+        "rotation": 0.0,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "medium",
+          "bbox": [
+            11,
+            258,
+            90,
+            340
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.29,
+        "gender_confidence": 0.85
+      }
+    },
+    {
+      "id": 28,
+      "image_id": "Screenshot 2026-07-19 133618.jpg",
+      "area": 72441.928,
+      "bbox": [
+        4.36,
+        144.47,
+        166.84,
+        434.2
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "female",
+        "visibility": "full_body",
+        "age_group": "young_adult",
+        "occlusion": "none",
+        "quality": "medium",
+        "occluded": false,
+        "rotation": 0.0,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "high",
+          "bbox": [
+            75,
+            167,
+            183,
+            279
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.49,
+        "gender_confidence": 0.99
+      }
+    },
+    {
+      "id": 29,
+      "image_id": "Screenshot 2026-07-19 133618.jpg",
+      "area": 58573.0743,
+      "bbox": [
+        140.56,
+        72.27,
+        114.91,
+        509.73
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "female",
+        "visibility": "partial",
+        "age_group": "young_adult",
+        "occlusion": "partial",
+        "quality": "medium",
+        "occluded": true,
+        "rotation": 0.0,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "high",
+          "bbox": [
+            147,
+            145,
+            272,
+            275
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.68,
+        "gender_confidence": 0.58
+      }
+    },
+    {
+      "id": 30,
+      "image_id": "Screenshot 2026-07-19 133618.jpg",
+      "area": 59915.5326,
+      "bbox": [
+        177.45,
+        200.05,
+        158.62,
+        377.73
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "upper_body",
+        "age_group": "adult",
+        "occlusion": "partial",
+        "quality": "high",
+        "occluded": true,
+        "rotation": 0.0,
+        "classifier_crop": {
+          "mode": "head_from_shoulders",
+          "quality": "medium",
+          "bbox": [
+            246,
+            231,
+            312,
+            305
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.53,
+        "gender_confidence": 0.95
+      }
+    },
+    {
+      "id": 31,
+      "image_id": "Screenshot 2026-07-19 133618.jpg",
+      "area": 85650.9956,
+      "bbox": [
+        324.65,
+        74.8,
+        170.26,
+        503.06
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "partial",
+        "age_group": "child",
+        "occlusion": "none",
+        "quality": "medium",
+        "occluded": false,
+        "rotation": 0.0,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "high",
+          "bbox": [
+            332,
+            196,
+            457,
+            325
+          ],
+          "crowded": false,
+          "reason": "ok"
+        },
+        "age_confidence": 0.37,
+        "gender_confidence": 0.54
+      }
+    },
+    {
+      "id": 32,
+      "image_id": "Screenshot 2026-07-19 133618.jpg",
+      "area": 62820.9534,
+      "bbox": [
+        495.68,
+        165.34,
+        152.26,
+        412.59
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "partial",
+        "age_group": "teen",
+        "occlusion": "partial",
+        "quality": "high",
+        "occluded": true,
+        "rotation": -26.76,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "high",
+          "bbox": [
+            493,
+            176,
+            595,
+            282
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.29,
+        "gender_confidence": 0.71
+      }
+    },
+    {
+      "id": 33,
+      "image_id": "Screenshot 2026-07-19 133618.jpg",
+      "area": 32901.193,
+      "bbox": [
+        512.88,
+        81.65,
+        146.9,
+        223.97
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "upper_body",
+        "age_group": "young_adult",
+        "occlusion": "none",
+        "quality": "high",
+        "occluded": false,
+        "rotation": 0.0,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "medium",
+          "bbox": [
+            555,
+            104,
+            629,
+            181
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.7,
+        "gender_confidence": 1.0
+      }
+    },
+    {
+      "id": 34,
+      "image_id": "Screenshot 2026-07-19 133618.jpg",
+      "area": 21110.8086,
+      "bbox": [
+        562.06,
+        94.53,
+        98.46,
+        214.41
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "upper_body",
+        "age_group": "young_adult",
+        "occlusion": "partial",
+        "quality": "medium",
+        "occluded": true,
+        "rotation": 0.0,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "medium",
+          "bbox": [
+            555,
+            104,
+            633,
+            185
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.78,
+        "gender_confidence": 1.0
+      }
+    },
+    {
+      "id": 35,
+      "image_id": "Screenshot 2026-07-19 133618.jpg",
+      "area": 97892.1747,
+      "bbox": [
+        605.09,
+        178.55,
+        244.81,
+        399.87
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "female",
+        "visibility": "upper_body",
+        "age_group": "young_adult",
+        "occlusion": "none",
+        "quality": "high",
+        "occluded": false,
+        "rotation": 0.0,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "high",
+          "bbox": [
+            678,
+            204,
+            779,
+            309
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.71,
+        "gender_confidence": 1.0
+      }
+    },
+    {
+      "id": 36,
+      "image_id": "Screenshot 2026-07-19 133618.jpg",
+      "area": 38063.6112,
+      "bbox": [
+        768.98,
+        196.66,
+        100.02,
+        380.56
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "female",
+        "visibility": "upper_body",
+        "age_group": "young_adult",
+        "occlusion": "partial",
+        "quality": "high",
+        "occluded": true,
+        "rotation": -17.12,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "high",
+          "bbox": [
+            759,
+            208,
+            860,
+            314
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.51,
+        "gender_confidence": 0.98
+      }
+    },
+    {
+      "id": 37,
+      "image_id": "Screenshot 2026-07-19 133618.jpg",
+      "area": 5812.2972,
+      "bbox": [
+        828.62,
+        53.48,
+        40.38,
+        143.94
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "full_body",
+        "age_group": "middle_age",
+        "occlusion": "partial",
+        "quality": "medium",
+        "occluded": true,
+        "rotation": 0.0,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "low",
+          "bbox": [
+            829,
+            42,
+            868,
+            103
+          ],
+          "crowded": false,
+          "reason": "ok"
+        },
+        "age_confidence": 0.65,
+        "gender_confidence": 1.0
+      }
+    },
+    {
+      "id": 38,
+      "image_id": "Screenshot 2026-07-19 133715.jpg",
+      "area": 6626.4379,
+      "bbox": [
+        101.33,
+        312.13,
+        45.13,
+        146.83
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "female",
+        "visibility": "full_body",
+        "age_group": "young_adult",
+        "occlusion": "none",
+        "quality": "high",
+        "occluded": false,
+        "rotation": -2.51,
+        "classifier_crop": {
+          "mode": "head_from_shoulders",
+          "quality": "medium",
+          "bbox": [
+            92,
+            281,
+            157,
+            355
+          ],
+          "crowded": false,
+          "reason": "ok"
+        },
+        "age_confidence": 0.64,
+        "gender_confidence": 0.96
+      }
+    },
+    {
+      "id": 39,
+      "image_id": "Screenshot 2026-07-19 133927.jpg",
+      "area": 93066.7356,
+      "bbox": [
+        0.44,
+        274.44,
+        307.08,
+        303.07
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "upper_body",
+        "age_group": "senior",
+        "occlusion": "partial",
+        "quality": "high",
+        "occluded": true,
+        "rotation": -0.56,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "high",
+          "bbox": [
+            77,
+            250,
+            211,
+            389
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.6,
+        "gender_confidence": 0.53
+      }
+    },
+    {
+      "id": 40,
+      "image_id": "Screenshot 2026-07-19 133927.jpg",
+      "area": 30515.316,
+      "bbox": [
+        64.47,
+        122.45,
+        138.58,
+        220.2
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "partial",
+        "age_group": "senior",
+        "occlusion": "partial",
+        "quality": "medium",
+        "occluded": true,
+        "rotation": 1.1,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "medium",
+          "bbox": [
+            102,
+            136,
+            191,
+            228
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.47,
+        "gender_confidence": 0.92
+      }
+    },
+    {
+      "id": 41,
+      "image_id": "Screenshot 2026-07-19 133927.jpg",
+      "area": 30806.4728,
+      "bbox": [
+        252.52,
+        271.64,
+        100.06,
+        307.88
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "full_body",
+        "age_group": "middle_age",
+        "occlusion": "partial",
+        "quality": "medium",
+        "occluded": true,
+        "rotation": -10.81,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "medium",
+          "bbox": [
+            244,
+            270,
+            320,
+            349
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.49,
+        "gender_confidence": 0.98
+      }
+    },
+    {
+      "id": 42,
+      "image_id": "Screenshot 2026-07-19 133927.jpg",
+      "area": 17957.8713,
+      "bbox": [
+        308.93,
+        299.16,
+        67.19,
+        267.27
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "full_body",
+        "age_group": "middle_age",
+        "occlusion": "none",
+        "quality": "low",
+        "occluded": false,
+        "rotation": 0.0,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "medium",
+          "bbox": [
+            294,
+            298,
+            360,
+            368
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.28,
+        "gender_confidence": 0.99
+      }
+    },
+    {
+      "id": 43,
+      "image_id": "Screenshot 2026-07-19 133927.jpg",
+      "area": 111622.6825,
+      "bbox": [
+        446.8,
+        171.67,
+        274.75,
+        406.27
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "upper_body",
+        "age_group": "teen",
+        "occlusion": "partial",
+        "quality": "high",
+        "occluded": true,
+        "rotation": -1.24,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "high",
+          "bbox": [
+            505,
+            204,
+            657,
+            361
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.49,
+        "gender_confidence": 1.0
+      }
+    },
+    {
+      "id": 44,
+      "image_id": "Screenshot 2026-07-19 133927.jpg",
+      "area": 19193.5128,
+      "bbox": [
+        516.52,
+        170.72,
+        121.11,
+        158.48
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "upper_body",
+        "age_group": "child",
+        "occlusion": "partial",
+        "quality": "medium",
+        "occluded": true,
+        "rotation": -2.98,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "medium",
+          "bbox": [
+            529,
+            181,
+            612,
+            267
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.49,
+        "gender_confidence": 0.99
+      }
+    },
+    {
+      "id": 45,
+      "image_id": "Screenshot 2026-07-19 133927.jpg",
+      "area": 17790.584,
+      "bbox": [
+        689.22,
+        298.02,
+        75.32,
+        236.2
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "full_body",
+        "age_group": "middle_age",
+        "occlusion": "none",
+        "quality": "medium",
+        "occluded": false,
+        "rotation": 2.77,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "medium",
+          "bbox": [
+            702,
+            292,
+            761,
+            353
+          ],
+          "crowded": true,
+          "reason": "ok"
+        },
+        "age_confidence": 0.63,
+        "gender_confidence": 1.0
+      }
+    },
+    {
+      "id": 46,
+      "image_id": "Screenshot 2026-07-19 133927.jpg",
+      "area": 20210.2848,
+      "bbox": [
+        759.9,
+        302.02,
+        84.96,
+        237.88
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "full_body",
+        "age_group": "middle_age",
+        "occlusion": "none",
+        "quality": "low",
+        "occluded": false,
+        "rotation": -2.44,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "medium",
+          "bbox": [
+            762,
+            298,
+            822,
+            360
+          ],
+          "crowded": false,
+          "reason": "ok"
+        },
+        "age_confidence": 0.63,
+        "gender_confidence": 0.93
+      }
+    },
+    {
+      "id": 47,
+      "image_id": "Screenshot 2026-07-19 134052.jpg",
+      "area": 56359.4028,
+      "bbox": [
+        187.1,
+        43.42,
+        154.74,
+        364.22
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "full_body",
+        "age_group": "child",
+        "occlusion": "none",
+        "quality": "high",
+        "occluded": false,
+        "rotation": -0.97,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "high",
+          "bbox": [
+            216,
+            50,
+            308,
+            145
+          ],
+          "crowded": false,
+          "reason": "ok"
+        },
+        "age_confidence": 0.62,
+        "gender_confidence": 0.99
+      }
+    },
+    {
+      "id": 48,
+      "image_id": "Screenshot 2026-07-19 134052.jpg",
+      "area": 54524.5008,
+      "bbox": [
+        335.93,
+        48.66,
+        152.61,
+        357.28
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "full_body",
+        "age_group": "senior",
+        "occlusion": "none",
+        "quality": "high",
+        "occluded": false,
+        "rotation": -0.93,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "high",
+          "bbox": [
+            370,
+            61,
+            460,
+            154
+          ],
+          "crowded": false,
+          "reason": "ok"
+        },
+        "age_confidence": 0.83,
+        "gender_confidence": 0.91
+      }
+    },
+    {
+      "id": 49,
+      "image_id": "Screenshot 2026-07-19 134215.jpg",
+      "area": 37411.9452,
+      "bbox": [
+        105.36,
+        103.52,
+        137.97,
+        271.16
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "full_body",
+        "age_group": "middle_age",
+        "occlusion": "none",
+        "quality": "high",
+        "occluded": false,
+        "rotation": 0.0,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "medium",
+          "bbox": [
+            138,
+            111,
+            206,
+            182
+          ],
+          "crowded": false,
+          "reason": "ok"
+        },
+        "age_confidence": 0.33,
+        "gender_confidence": 0.89
+      }
+    },
+    {
+      "id": 50,
+      "image_id": "Screenshot 2026-07-19 134215.jpg",
+      "area": 33664.7361,
+      "bbox": [
+        247.55,
+        91.17,
+        125.61,
+        268.01
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "full_body",
+        "age_group": "middle_age",
+        "occlusion": "none",
+        "quality": "high",
+        "occluded": false,
+        "rotation": 0.0,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "medium",
+          "bbox": [
+            267,
+            98,
+            334,
+            167
+          ],
+          "crowded": false,
+          "reason": "ok"
+        },
+        "age_confidence": 0.42,
+        "gender_confidence": 1.0
+      }
+    },
+    {
+      "id": 51,
+      "image_id": "Screenshot 2026-07-19 134338.jpg",
+      "area": 181094.2122,
+      "bbox": [
+        52.68,
+        139.56,
+        599.61,
+        302.02
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "female",
+        "visibility": "full_body",
+        "age_group": "senior",
+        "occlusion": "none",
+        "quality": "high",
+        "occluded": false,
+        "rotation": 0.0,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "high",
+          "bbox": [
+            44,
+            157,
+            205,
+            324
+          ],
+          "crowded": false,
+          "reason": "ok"
+        },
+        "age_confidence": 0.74,
+        "gender_confidence": 0.98
+      }
+    }
+  ]
+}

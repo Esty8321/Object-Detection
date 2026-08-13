@@ -1,0 +1,195 @@
+{
+  "info": {
+    "name": "PDC_v3 Person Detector and Classifier output",
+    "schema": "coco_like_person_attributes_v3",
+    "version": "v3"
+  },
+  "images": [
+    {
+      "id": "Screenshot 2026-07-19 134052.jpg",
+      "file_name": "Screenshot 2026-07-19 134052.jpg",
+      "width": 661,
+      "height": 445
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "image_id": "Screenshot 2026-07-19 134052.jpg",
+      "area": 56359.4028,
+      "bbox": [
+        187.1,
+        43.42,
+        154.74,
+        364.22
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "full_body",
+        "age_group": "child",
+        "occlusion": "none",
+        "quality": "high",
+        "occluded": false,
+        "rotation": -0.97,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "high",
+          "bbox": [
+            216,
+            50,
+            308,
+            145
+          ],
+          "crowded": false,
+          "reason": "ok"
+        },
+        "age_confidence": 0.62,
+        "gender_confidence": 0.99,
+        "debug": {
+          "age_class_id": 0,
+          "age_confidence": 0.616277,
+          "age_probabilities": [
+            0.616277,
+            0.046598,
+            0.089683,
+            0.047667,
+            0.018657,
+            0.181117
+          ],
+          "gender_class_id": 0,
+          "gender_confidence": 0.990208,
+          "gender_probabilities": [
+            0.990208,
+            0.009792
+          ],
+          "classifier_backend": "torch",
+          "classifier_layout": "age6_gender2+tta4",
+          "classifier_crop_candidates": [
+            {
+              "source": "face_detector",
+              "bbox_xyxy": null,
+              "quality": "reject",
+              "reason": "no_face_detected",
+              "metrics": {
+                "faces": 0
+              }
+            },
+            {
+              "source": "face_keypoints",
+              "bbox_xyxy": [
+                216,
+                50,
+                308,
+                145
+              ],
+              "quality": "high",
+              "reason": "ok",
+              "metrics": {
+                "width": 92,
+                "height": 95,
+                "blur": 252.228,
+                "brightness": 158.844,
+                "face_keypoints": 2
+              }
+            }
+          ],
+          "bbox_confidence": 0.867583,
+          "keypoints_visible": 12,
+          "keypoints_missing_ratio": 0.294118,
+          "touches_image_boundary": false,
+          "blur_laplacian_var": 446.573246
+        }
+      }
+    },
+    {
+      "id": 2,
+      "image_id": "Screenshot 2026-07-19 134052.jpg",
+      "area": 54524.5008,
+      "bbox": [
+        335.93,
+        48.66,
+        152.61,
+        357.28
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "gender": "male",
+        "visibility": "full_body",
+        "age_group": "senior",
+        "occlusion": "none",
+        "quality": "high",
+        "occluded": false,
+        "rotation": -0.93,
+        "classifier_crop": {
+          "mode": "face_keypoints",
+          "quality": "high",
+          "bbox": [
+            370,
+            61,
+            460,
+            154
+          ],
+          "crowded": false,
+          "reason": "ok"
+        },
+        "age_confidence": 0.83,
+        "gender_confidence": 0.91,
+        "debug": {
+          "age_class_id": 5,
+          "age_confidence": 0.830704,
+          "age_probabilities": [
+            0.089566,
+            0.021257,
+            0.012336,
+            0.004684,
+            0.041452,
+            0.830704
+          ],
+          "gender_class_id": 0,
+          "gender_confidence": 0.914104,
+          "gender_probabilities": [
+            0.914104,
+            0.085896
+          ],
+          "classifier_backend": "torch",
+          "classifier_layout": "age6_gender2+tta4",
+          "classifier_crop_candidates": [
+            {
+              "source": "face_detector",
+              "bbox_xyxy": null,
+              "quality": "reject",
+              "reason": "no_face_detected",
+              "metrics": {
+                "faces": 0
+              }
+            },
+            {
+              "source": "face_keypoints",
+              "bbox_xyxy": [
+                370,
+                61,
+                460,
+                154
+              ],
+              "quality": "high",
+              "reason": "ok",
+              "metrics": {
+                "width": 90,
+                "height": 93,
+                "blur": 584.736,
+                "brightness": 106.782,
+                "face_keypoints": 2
+              }
+            }
+          ],
+          "bbox_confidence": 0.891429,
+          "keypoints_visible": 13,
+          "keypoints_missing_ratio": 0.235294,
+          "touches_image_boundary": false,
+          "blur_laplacian_var": 428.898245
+        }
+      }
+    }
+  ]
+}
